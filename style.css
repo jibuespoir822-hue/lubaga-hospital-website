@@ -1,0 +1,210 @@
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+
+/* Website Colours */
+:root {
+    --navy: #073b5c;
+    --blue: #0879b9;
+    --pale: #eef7fb;
+    --ink: #183247;
+}
+
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--ink);
+    line-height: 1.7;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+h2 {
+    color: var(--navy);
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+/* Navigation Bar */
+.hospital-nav {
+    background: var(--navy);
+    box-shadow: 0 3px 15px #082f4930;
+}
+
+.navbar-brand {
+    letter-spacing: .5px;
+}
+
+.navbar-brand span {
+    color: #8ed7f5;
+}
+
+.nav-link {
+    font-weight: 600;
+    margin: 0 .25rem;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #8ed7f5 !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background: var(--blue);
+    border-color: var(--blue);
+}
+
+.btn-primary:hover {
+    background: var(--navy);
+    border-color: var(--navy);
+}
+
+/* Home Hero Section */
+.hero {
+    background:
+        linear-gradient(90deg, rgba(3,34,54,.94), rgba(3,50,76,.58)),
+        url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1800&q=85')
+        center/cover;
+
+    color: white;
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.hero h1 {
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    line-height: 1.08;
+}
+
+.hero h1 span {
+    color: #8ed7f5;
+}
+
+.hero .lead {
+    max-width: 600px;
+}
+
+.eyebrow {
+    color: var(--blue);
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: .78rem;
+}
+
+.hero .eyebrow {
+    color: #9bdcf6;
+}
+
+/* Other Page Headers */
+.page-banner {
+    background: linear-gradient(120deg, #073b5c, #0879b9);
+    color: white;
+    padding: 75px 0;
+}
+
+.page-banner h1 {
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+}
+
+.page-banner .eyebrow {
+    color: #a9e4fb;
+}
+
+/* Information Cards */
+.info-card,
+.form-panel {
+    background: white;
+    border: 1px solid #e3edf2;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 8px 28px #153c5210;
+}
+
+.info-card h3 {
+    font-size: 1.25rem;
+    color: var(--navy);
+    margin: 12px 0;
+}
+
+/* Feature Icons */
+.feature-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 15px;
+    background: var(--pale);
+    color: var(--blue);
+    display: grid;
+    place-items: center;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+/* Background Section */
+.soft-section {
+    background: var(--pale);
+}
+
+/* Footer */
+.site-footer {
+    background: #062f49;
+    color: #d9eaf3;
+    padding: 24px 0;
+    font-size: .92rem;
+}
+
+.site-footer a {
+    color: #d9eaf3;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: #8ed7f5;
+}
+
+/* Values List */
+.value-list li {
+    padding: .35rem 0;
+}
+
+/* Forms */
+.form-control,
+.form-select {
+    padding: .75rem;
+    border-color: #d4e1e8;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 .2rem #0879b922;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 767px) {
+
+    .hero .min-vh-75 {
+        min-height: 68vh;
+    }
+
+    .hero .btn {
+        margin-bottom: 10px;
+    }
+
+    .page-banner {
+        padding: 55px 0;
+    }
+
+    .site-footer p:last-child {
+        line-height: 2;
+    }
+
+}
