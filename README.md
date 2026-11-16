@@ -1,0 +1,2 @@
+# lubaga-hospital-website
+A responsive multi-page hospital website developed for Lubaga Hospital in Kampala, Uganda, using HTML5, CSS3, and Bootstrap 5. The project features a professional homepage, hospital information, healthcare services, an appointment request form, and a contact page with Google Maps integration. Designed to demonstrate front-end web development skills, responsive web design, and multi-page website navigation.
